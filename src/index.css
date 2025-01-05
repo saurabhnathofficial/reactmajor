@@ -57,9 +57,9 @@ body {
   }
 
 
-  /* .flex-center {
+  .flex-center {
     @apply flex justify-center items-center;
-  } */
+  }
 
   .mask-clip-path {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -74,13 +74,13 @@ body {
     @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
   }
 
-  /* .about-subtext {
+  .about-subtext {
     @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
-  } */
+  }
 
-  /* .about-image {
+  .about-image {
     @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
-  } */
+  } 
 
   /* .animated-title {
     @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
