@@ -73,15 +73,15 @@ const Hero = () => {
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
             {isLoading && (
-                // <div>
-                    <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-                        <div className="three-body">
-                            <div className="three-body_dot" />
-                            <div className="three-body_dot" />
-                            <div className="three-body_dot" />
-                        </div>
+
+                <div className="flex-center absolute z-[19] h-dvh w-screen overflow-hidden bg-violet-50">
+                    <div className="three-body">
+                        <div className="three-body_dot" />
+                        <div className="three-body_dot" />
+                        <div className="three-body_dot" />
                     </div>
-                // </div>
+                </div>
+
             )}
             <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
                 <div>
@@ -92,7 +92,7 @@ const Hero = () => {
                                 src={getvideoSource(upComingVideoIndex)}
                                 loop
                                 muted
-                                autoPlay
+                                // autoPlay
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
                                 onLoad
@@ -105,7 +105,7 @@ const Hero = () => {
                         src={getvideoSource(currentIndex)}
                         loop
                         muted
-                        autoPlay
+                        // autoPlay
                         id="next-video"
                         className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
                         onLoad={handleVideoLoad}
@@ -115,7 +115,7 @@ const Hero = () => {
                         src={getvideoSource(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
                         loop
                         muted
-                        autoPlay
+                        // autoPlay
                         className="absolute left-0 top-0 size-full object-cover object-center"
                         onLoadedData={handleVideoLoad}
                     />
